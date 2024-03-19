@@ -1,13 +1,13 @@
 view: a_log_analytics_test11 {
 
   derived_table: {
-    sql: select block from @{analytic_dev_pf_app_block};;
+    sql: select block from @{analytic_dev_pf_app_country_name};;
   }
 
-  dimension: block {
+  dimension: country_name {
     type: string
-    sql: ${TABLE}.block ;;
-    label: "Channel ID"
+    sql: ${TABLE}.country_name ;;
+    label: "Country Name"
   }
 
 

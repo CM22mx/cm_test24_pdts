@@ -1,19 +1,19 @@
 project_name: "test242_cmu"
 
 constant: DB_CONNECTION {
-  value: "vijaya_bq_test"
+  value: "chris_bq_test"
 }
 constant: LOG_ANALYTICS {
-  value: "looker-support-lms-demo"
+  value: "kos-looker-test-01-415621"
 }
 constant: datasetname {
-  value: "chicago_crime_data"
+  value: "lookerbqtestdata"
 }
-constant: analytic_dev_pf_app_primary_type {
-  value:"`@{LOG_ANALYTICS}.@{datasetname}.crime`"
+constant: analytic_dev_pf_app_reg_key {
+  value:"`@{LOG_ANALYTICS}.@{datasetname}.connection_reg_r3`"
   export: none
 }
-constant: analytic_dev_pf_app_block {
-  value:"`@{LOG_ANALYTICS}.@{datasetname}.crime_partitioned_1`"
+constant: analytic_dev_pf_app_country_name {
+  value:"`@{LOG_ANALYTICS}.@{datasetname}.covid19_open_data`"
   export: none
 }

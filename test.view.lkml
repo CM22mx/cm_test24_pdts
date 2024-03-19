@@ -1,14 +1,14 @@
 view: a_log_analytics_test1 {
 
   derived_table: {
-    sql: select primary_type from @{analytic_dev_pf_app_primary_type};;
+    sql: select reg_key from @{analytic_dev_pf_app_reg_key};;
     datagroup_trigger: dg_for_test_view
   }
 
-  dimension: primary_type {
+  dimension: reg_key {
     type: string
-    sql: ${TABLE}.primary_type ;;
-    label: "Primary Type"
+    sql: ${TABLE}.reg_key ;;
+    label: "Reg Key"
   }
 
 
